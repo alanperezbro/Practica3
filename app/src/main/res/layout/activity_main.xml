@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/verde"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
 
@@ -16,8 +16,7 @@
         android:text="PRÁCTICA 24 OCTUBRE"
         android:padding="45dp"
         android:textStyle="bold"
-        android:fontFamily="casual"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="35dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +51,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrar"
+        android:text="Enviar Notificacion"
+        android:background="@color/verde"
         android:layout_gravity="center"
         tools:layout_editor_absoluteX="194dp"
         tools:layout_editor_absoluteY="476dp" />

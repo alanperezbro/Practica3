@@ -40,9 +40,9 @@ static final int NOTIFICATION_ID =1;
         boton.setOnClickListener(new View.OnClickListener() {
 
             Intent intent = new Intent(MainActivity.this,MainActivity.class);
-            Intent intent2 = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:6141903907"));
-            Intent intent3= new Intent(Intent.ACTION_VIEW,Uri.parse("geo:0?q=universidad+tecnologica+de+chihuahua"));
-            Intent intent4= new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.nfl.com"));
+            Intent intent2 = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:6144474549"));
+            Intent intent3= new Intent(Intent.ACTION_VIEW,Uri.parse("geo:0?q=UTCH"));
+            Intent intent4= new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com"));
             PendingIntent pendingIntent = PendingIntent.getActivity(
                     MainActivity.this,0,intent, PendingIntent.FLAG_IMMUTABLE);
             PendingIntent pendingIntent2 = PendingIntent.getActivity(
@@ -56,9 +56,9 @@ static final int NOTIFICATION_ID =1;
             public void onClick(View view) {
                 NotificationCompat.Builder noti =
                         new NotificationCompat.Builder(MainActivity.this,CANAL_ID)
-                .setContentTitle("Notificación auuuu")
-                                .setContentText("pura buena vibra pa")
-                                .addAction(R.drawable.ic_launcher_background,"Teléfono", pendingIntent2)
+                .setContentTitle("Hugo")
+                                .setContentText("Lujan")
+                                .addAction(R.drawable.ic_launcher_background,"Llamada", pendingIntent2)
                                 .addAction(R.drawable.ic_launcher_background,"Mapa", pendingIntent3)
                                 .addAction(R.drawable.ic_launcher_background,"Página", pendingIntent4)
                                 .setSmallIcon(R.drawable.notification);
